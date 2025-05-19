@@ -6,8 +6,15 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 // Enable CORS for all routes
-app.use(cors());
-app.use(express.json());
+
+app.use(cors({
+  origin: [
+    'https://hogwarts-frontend-new.vercel.app', 
+    'http://localhost:3000' 
+  ],
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true
+}));
 
 // Houses endpoint
 app.get('/houses', async (req, res) => {

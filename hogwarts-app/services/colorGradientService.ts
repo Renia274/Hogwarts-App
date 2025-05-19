@@ -10,7 +10,7 @@ export async function getGradientStyle(houseColors: string): Promise<{ backgroun
     
     const colorPromises = colorParts.map(async (color) => {
       try {
-        const response = await fetch(`http://localhost:3001/colors/${color.trim()}`);
+        const response = await fetch(`https://hogwarts-app-one.vercel.app/colors/${color.trim()}`);
         if (!response.ok) return null;
         const data: ColorResponse = await response.json();
         return data?.data?.hex ? `#${data.data.hex}` : null;

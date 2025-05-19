@@ -19,7 +19,7 @@ export default function Home() {
   const fetchHouses = async () => {     
     setLoading(true);     
     try {       
-      const response = await fetch('http://localhost:3001/houses');       
+      const response = await fetch('https://hogwarts-app-one.vercel.app/houses');     
       if (!response.ok) {         
         throw new Error('Failed to fetch houses');       
       }       

@@ -1,6 +1,6 @@
 export const fetchHouses = async () => {
   try {
-    const response = await fetch('http://localhost:3001/houses');
+    const response = await fetch('https://hogwarts-app-one.vercel.app/houses');
     if (!response.ok) {
       throw new Error('Failed to fetch houses');
     }
@@ -13,7 +13,7 @@ export const fetchHouses = async () => {
 
 export const fetchHouseByName = async (name: string) => {
   try {
-    const response = await fetch(`http://localhost:3001/houses?name=${encodeURIComponent(name)}`);
+    const response = await fetch(`https://hogwarts-app-one.vercel.app/houses?name=${encodeURIComponent(name)}`);
     if (!response.ok) {
       throw new Error('Failed to fetch house');
     }
