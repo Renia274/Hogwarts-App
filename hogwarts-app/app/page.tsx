@@ -1,7 +1,7 @@
 'use client';  
 
 import { useState, useEffect } from 'react'; 
-import { House } from '@/types'; 
+import { House } from '@/types/type'; 
 import HouseCard from '@/components/HouseCard'; 
 import SearchBar from '@/components/SearchBar'; 
 import LoadingSpinner from '@/components/LoadingSpinner';  

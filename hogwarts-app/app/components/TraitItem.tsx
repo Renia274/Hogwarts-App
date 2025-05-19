@@ -1,5 +1,5 @@
 import React from 'react'; 
-import { Trait } from '@/types';  
+import { Trait } from '@/types/type';  
 
 interface TraitItemProps {   
   trait: Trait; 

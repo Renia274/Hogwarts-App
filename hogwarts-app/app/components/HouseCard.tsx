@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { House } from '@/types';
+import { House } from '@/types/type';
 import { getGradientStyle } from '@/services/colorGradientService';
 import TraitItem from '@/components/TraitItem';
 import TraitSearchBar from '@/components/TraitSearchBar';
