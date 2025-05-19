@@ -11,7 +11,7 @@ export default function TraitSearchBar({ onChange }: TraitSearchBarProps) {
         type="text"
         placeholder="Search house traits"
         onChange={onChange}
-        className="w-full md:w-[236px] h-8 pl-2 pt-0.5 rounded-lg focus:outline-none  placeholder-[#757675]"
+        className="w-full md:w-[236px] h-10 pl-2 pt-0.5 rounded-lg focus:outline-none  placeholder-[#757675]"
         style={{
           border: '1px solid #D3D2D2'
         }}
